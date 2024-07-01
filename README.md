@@ -1,13 +1,8 @@
  # SimpleLB
 
-Simple LB is the simplest Load Balancer ever created.
+SimpleLB is a lightweight, efficient load balancer designed to distribute incoming requests across multiple backend servers using a RoundRobin algorithm. This ensures even distribution of traffic and supports retries for failed requests, enhancing overall reliability.
 
-It uses RoundRobin algorithm to send requests into set of backends and support
-retries too.
-
-It also performs active cleaning and passive recovery for unhealthy backends.
-
-Since its simple it assume if / is reachable for any host its available
+In addition to load balancing, SimpleLB actively monitors backend health and performs necessary cleanup and recovery operations to maintain optimal performance. It assumes a backend is available if its root URL (/) is reachable.
 
 ## Features
 
