@@ -9,6 +9,14 @@ It also performs active cleaning and passive recovery for unhealthy backends.
 
 Since its simple it assume if / is reachable for any host its available
 
+## Features
+
+- RoundRobin Load Balancing: Distributes incoming requests evenly across backend servers.
+- Retry Mechanism: Automatically retries requests if a backend fails.
+- Health Checks: Regularly pings backends to ensure they are available and recovers them when they are back online.
+- Assumption of Availability: Considers a backend available if the root path (/) is reachable.
+
+
 # How to use
 ```bash
 Usage:
